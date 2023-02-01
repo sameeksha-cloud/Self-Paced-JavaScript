@@ -32,7 +32,7 @@ while(i<=5>){
 ```
 
 ## do while
-do while is similar to while only difference is that do while will be execute once whether condition is true or false.
+do while is similar to while only difference is that do while will be execute oce whether condn is true or false.
 
 ```
 <script>
