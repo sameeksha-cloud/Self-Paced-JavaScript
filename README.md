@@ -1,6 +1,6 @@
 # Self-Paced-JavaScript
 
-##Introduction
+## Introduction
 
 - JavaScript is a high-level, dynamic, interpreted programming language that is well-suited to object-oriented and functional programming styles.
 - JavaScript’s variables are untyped. Its syntax is loosely based on Java, but the languages are otherwise unrelated.
