@@ -1,13 +1,34 @@
-function findlargest(arr){
-  return arr.sort(function(a,b){
-    return a-b
-  })
+function thirdLargest(arr){
+let arr_size = arr.length
+
+    if(arr_size < 3){
+        return "Invalid Input"
+    }
+
+    var first = arr[0]
+    var second = -1000000000
+    var third = -1000000000
+
+    for(let i = 1; i<arr.length; i++){
+
+        if(arr[i]>first){
+            third = second
+            second = first
+            first = arr[i]
+        }
+
+        else if(arr[i]>second){
+            third = second
+            second = arr[i]
+        }
+
+        else if(arr[i]>third){
+            third = arr[i]
+        }
+
+    }
+    return third  
+
 }
-
-let arr = [3,45,6,7,23,5,7,8]
-let result = findlargest(arr)
-let unique = [...new Set(result)]
-console.log(unique[4])
-
-
-
+var arr = [3,45,6,7,23,5,7,8]
+console.log(thirdLargest(arr))
